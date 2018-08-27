@@ -1,9 +1,11 @@
-package io.ushi.common.rest;
+package io.ushi.rest;
 
 import lombok.Data;
 
 @Data
 public class ErrorEntity {
+
+    String field;
 
     String code;
 
