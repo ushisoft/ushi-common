@@ -1,5 +1,7 @@
 package io.ushi.validation;
 
+import io.ushi.validation.resourceloading.AbstractResourceBundleLocator;
+import io.ushi.validation.resourceloading.CachingResourceBundleLocator;
 import org.junit.jupiter.api.Test;
 
 import java.util.Locale;
@@ -11,7 +13,7 @@ class CachingResourceBundleLocatorTest {
 
     @Test
     void getResourceBundle() {
-        CachingResourceBundleLocator locator = new CachingResourceBundleLocator();
+        AbstractResourceBundleLocator locator = new CachingResourceBundleLocator("io.ushi.validation.UshiMessages");
         ResourceBundle bundle = locator.getResourceBundle(new Locale("zh", "CN"));
         assertEquals("god", bundle.getString("test"));
     }

@@ -1,8 +1,8 @@
 package io.ushi.rest;
 
-import lombok.Getter;
+import lombok.Data;
 
-@Getter
+@Data
 public class ErrorEntity {
 
     String field;
