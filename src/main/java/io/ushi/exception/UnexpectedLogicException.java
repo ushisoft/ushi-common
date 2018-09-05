@@ -21,7 +21,7 @@ public class UnexpectedLogicException extends RuntimeException {
     public String getMessage() {
         StringBuilder sb = new StringBuilder("Logic Unexpected for field: ")
                 .append(errorEntity.getField())
-                .append(", with error: ").append(errorEntity.getCode());
+                .append(", with code: ").append(errorEntity.getCode());
         return sb.toString();
     }
 }

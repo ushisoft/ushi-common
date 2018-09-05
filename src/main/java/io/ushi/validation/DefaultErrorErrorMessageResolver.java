@@ -44,7 +44,7 @@ public class DefaultErrorErrorMessageResolver implements ErrorMessageResolver {
     @Override
     public ErrorEntity resolve(String field, UshiError error) {
         return ErrorEntity.field(field)
-                .error(error.getCode())
+                .code(error.getCode())
                 .message(resolve(error.getMessage()))
                 .build();
     }

@@ -18,7 +18,7 @@ public class ErrorEntity {
     }
 
     public interface RequiredField {
-        RequiredCode error(String error);
+        RequiredCode code(String error);
     }
 
     public interface RequiredCode {
@@ -39,8 +39,8 @@ public class ErrorEntity {
         }
 
         @Override
-        public RequiredCode error(String error) {
-            instance.code = error;
+        public RequiredCode code(String code) {
+            instance.code = code;
             return this;
         }
 
