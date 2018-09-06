@@ -6,11 +6,11 @@ import java.util.Locale;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DefaultErrorErrorMessageResolverTest {
+class DefaultErrorMessageResolverTest {
 
     @Test
     void render() {
-        DefaultErrorErrorMessageResolver messageResolver = new DefaultErrorErrorMessageResolver();
+        DefaultErrorMessageResolver messageResolver = new DefaultErrorMessageResolver();
         messageResolver.setLocale(new Locale("zh", "CN"));
         String withPattern = messageResolver.resolve("{io.ushi.validation.Duplicated.message}");
         assertEquals("数据重复。", withPattern);

@@ -11,9 +11,9 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DefaultErrorErrorMessageResolver implements ErrorMessageResolver {
+public class DefaultErrorMessageResolver implements ErrorMessageResolver {
 
-    private static final Logger logger = LoggerFactory.getLogger(DefaultErrorErrorMessageResolver.class);
+    private static final Logger logger = LoggerFactory.getLogger(DefaultErrorMessageResolver.class);
 
     private static final String DEFAULT_MESSAGE_SOURCE_NAME = "io.ushi.validation.UshiMessages";
 
