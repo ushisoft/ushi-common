@@ -6,7 +6,7 @@ public enum CommonErrors implements UshiError {
     DataNotFound,
 
     @Text("{io.ushi.validation.Duplicated.message}")
-    DuplicateConstraint;
+    Duplicated;
 
     @Override
     public String getCode() {
